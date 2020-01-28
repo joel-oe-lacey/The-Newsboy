@@ -1,0 +1,14 @@
+.news-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    margin: 1%;
+    width: 30%;
+    height: 30%;
+
+    img {
+      height: 60%;
+      width: 100%;
+    }
+}
