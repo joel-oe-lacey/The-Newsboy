@@ -1,9 +1,16 @@
 import React from 'react';
-import './NewsContainer.css'
+import './NewsContainer.scss'
+import NewsArticle from '../NewsArticle/NewsArticle';
 
-const NewsContainer = () => {
-    return <section>
-        {/* need to add key when add */}
+const NewsContainer = (props) => {
+    console.log('contProps', props)
+
+    const newsArticles = props.articles.map(article => {
+        return <NewsArticle key={article.id} article={article} />
+    })
+
+    return <section className="news-container">
+        {newsArticles}
     </section>
 }
 
