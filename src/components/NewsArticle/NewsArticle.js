@@ -1,12 +1,12 @@
 import React from 'react';
-import './NewsArticle.css';
+import './NewsArticle.scss';
 
 const NewsArticle = (props) => {
-    return (<section>
-        <img src={props.article.imgUrl} alt={props.article.title}></img>
-        <h1>{props.article.title}</h1>
-        <p>{props.article.body}</p>
-        <button><a href={props.article.link}>Link to the article</a></button>
+    return (<section className="news-article">
+        <img src={props.article.img} alt={props.article.headline}></img>
+        <h1>{props.article.headline}</h1>
+        <p>{props.article.description}</p>
+        <button><a href={props.article.url}>Link to the article</a></button>
     </section>
     )}
 
