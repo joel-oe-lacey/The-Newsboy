@@ -8,7 +8,7 @@ import technology from '../../data/technology';
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu';
-
+const allNews = {local, entertainment, health, science, technology}
 
 class App extends Component {
   constructor() {
@@ -19,30 +19,14 @@ class App extends Component {
   }
 
   selectNewsType = (type) => {
-    switch (type) {
-      case 'entertainment':
-        this.setState({ articles: entertainment })
-        break;
-      case 'health':
-        this.setState({ articles: health })
-        break;
-      case 'science':
-        this.setState({ articles: science })
-        break;
-      case 'technology':
-        this.setState({ articles: technology })
-        break;
-      default:
-        this.setState({ articles: local })
-        break;
-    }
+    this.setState({articles: allNews[type]})
   }
 
   render () {
     return (
       <div className="app">
         <Menu selectNewsType={this.selectNewsType} />
-        <NewsContainer key="1" articles={this.state.articles} />
+        <NewsContainer articles={this.state.articles} />
       </div>
     );
   }
