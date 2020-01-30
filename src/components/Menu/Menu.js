@@ -9,7 +9,7 @@ const Menu = (props) => {
 
     return (
         <nav className="menu">
-            <h1>What's New?</h1>
+            <h1>What's <span className="headerColor">New?</span></h1>
             <button onClick={(event) => selectNews(event, 'local')}>Local News</button>
             <button onClick={(event) => selectNews(event, 'technology')}>Technology</button>
             <button onClick={(event) => selectNews(event, 'entertainment')}>Entertainment</button>

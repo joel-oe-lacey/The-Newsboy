@@ -6,8 +6,8 @@
     background-color: #86BBD8;
     border: 2px solid #33658A;
     margin: 1%;
-    width: 45%;
-    height: 60%;
+    width: 48%;
+    height: 70%;
 
     img {
       height: 55%;
@@ -15,15 +15,19 @@
       margin-top: 5%;
     }
 
-    button {
+    a {
       height: 8%;
       width: 100%;
       background-color: #F26419;
+      font-size: 1.1em;
+      font-weight: normal;
+      text-decoration: none;
+      padding-top: 1%;
+      transition: all 0.4s ease 0s;
 
-      a {
-        font-size: 1.5em;
+      &:hover {
         font-weight: bold;
-        text-decoration: none;
+        transition: all 0.4s ease 0s;
       }
     }
 }
