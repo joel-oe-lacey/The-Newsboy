@@ -1,3 +1,41 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Menu renders the baseline menu structure 1`] = `ShallowWrapper {}`;
+exports[`Menu renders the baseline menu structure 1`] = `
+<nav
+  className="menu"
+>
+  <h1>
+    What's 
+    <span
+      className="headerColor"
+    >
+      New?
+    </span>
+  </h1>
+  <button
+    onClick={[Function]}
+  >
+    Local News
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Technology
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Entertainment
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Science
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Health
+  </button>
+</nav>
+`;

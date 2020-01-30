@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm renders a form for news searching 1`] = `
+<form
+  className="searchArea"
+>
+  <input
+    name="search"
+    onChange={[Function]}
+    placeholder="Search for news articles here."
+    type="text"
+    value=""
+  />
+  <button
+    onClick={[Function]}
+  >
+    Search
+  </button>
+</form>
+`;
