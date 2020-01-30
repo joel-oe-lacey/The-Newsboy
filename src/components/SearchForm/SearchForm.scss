@@ -2,15 +2,33 @@
   grid-area: search;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 
   input {
     height: 100%;
     width: 40%;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: white;
   }
 
   button {
-    height: 100%;
-    width: 20%;
+    height: 50%;
+    width: 10%;
+    background: #F26419;
+    box-shadow: inset 0px 0px 0px white;
+    border-radius: 5%;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    transition: all 0.4s ease 0s;
+
+    &:hover {
+      box-shadow: inset 180px 0px 0px #F26419;
+      transition: all 0.4s ease 0s;
+      cursor: pointer;
+    }
   }
 }

@@ -20,7 +20,7 @@ html {
   "menu news news news";
   grid-template-columns: 15% repeat(3, 28.33%);
   grid-template-rows: 10% repeat(3, 30%);
-  background: white;
+  background: rgb(16, 51, 78);
   height: 100%;
   text-align: center;
   width: 100%;

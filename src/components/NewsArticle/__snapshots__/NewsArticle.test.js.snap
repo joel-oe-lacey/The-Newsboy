@@ -1,3 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NewsArticle renders an article utilizing available data 1`] = `ShallowWrapper {}`;
+exports[`NewsArticle renders an article utilizing available data 1`] = `
+<article
+  className="news-article"
+>
+  <img
+    alt="Important Headline"
+    src="www.imgTestUrl.com"
+  />
+  <section
+    className="news-content"
+  >
+    <h1>
+      Important Headline
+    </h1>
+    <p>
+      Important description text
+    </p>
+  </section>
+  <a
+    href="www.testRedirect.com"
+  >
+    Link to the article  -&gt;
+  </a>
+</article>
+`;

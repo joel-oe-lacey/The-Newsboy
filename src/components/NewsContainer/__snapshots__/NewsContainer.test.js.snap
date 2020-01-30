@@ -1,5 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NewsContainer renders a container with passed articles 1`] = `ShallowWrapper {}`;
+exports[`NewsContainer renders a container with passed articles 1`] = `
+<section
+  className="news-container"
+>
+  <NewsArticle
+    article={
+      <NewsArticle
+        article={
+          Object {
+            "description": "The 24-foot-tall chicken skeleton towers over the people who pass through the main hall of the Denver Central Library. Skeletal wings extend to the side, and it looks downright prehistoric.",
+            "headline": "Giant Chicken Skeleton In Denver’s Central Library Stands For More Than Just Dinner",
+            "id": 2,
+            "img": "https://i0.wp.com/wp-cpr.s3.amazonaws.com/uploads/2019/09/cpr-swolf_black-cube-monumental_DSC8170.jpg?resize=2064,1376",
+            "url": "https://www.cpr.org/2019/09/27/giant-chicken-skeleton-in-denvers-central-library-stands-for-more-than-just-dinner/",
+          }
+        }
+      />
+    }
+    key="1"
+  />
+  <NewsArticle
+    article={
+      <NewsArticle
+        article={
+          Object {
+            "description": "Car2Go, the popular car-sharing and rental company, will be leaving Denver at the end of the October, the company announced Friday.",
+            "headline": "Car2Go leaving Denver amid company shake-up",
+            "id": 3,
+            "img": "https://www.denverpost.com/wp-content/uploads/2017/06/cd20carsharingdsc_8786.jpg?w=859",
+            "url": "https://www.denverpost.com/2019/09/27/car2go-leaving-denver/",
+          }
+        }
+      />
+    }
+    key="1"
+  />
+</section>
+`;
 
-exports[`NewsContainer renders an error if no articles are available 1`] = `ShallowWrapper {}`;
+exports[`NewsContainer renders an error if no articles are available 1`] = `
+<section
+  className="news-container"
+>
+  <h1
+    className="no-results"
+  >
+    No matches found, please select your news type and search again.
+  </h1>
+</section>
+`;

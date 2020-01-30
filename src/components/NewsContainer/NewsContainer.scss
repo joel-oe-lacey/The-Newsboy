@@ -3,4 +3,11 @@
     flex-flow: row wrap;
     overflow: scroll;
     grid-area: news;
+    justify-content: space-between;
+}
+
+.no-results {
+    color: white;
+    padding: 20%;
+    font-weight: normal;
 }

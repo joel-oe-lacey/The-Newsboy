@@ -8,7 +8,7 @@ const NewsContainer = ({articles}) => {
     })
 
     return <section className="news-container">
-        {newsArticles.length ? newsArticles : <h1>No matches found, please select your news type and search again</h1>}
+        {newsArticles.length ? newsArticles : <h1 className="no-results">No matches found, please select your news type and search again.</h1>}
     </section>
 }
 
