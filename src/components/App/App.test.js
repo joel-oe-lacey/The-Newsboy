@@ -11,7 +11,7 @@ describe('App', () => {
         wrapper = shallow(<App />);
     })
 
-    it('renders a container with ideas', () => {
+    it('renders the whole app to the page', () => {
         expect(wrapper).toMatchSnapshot();
     })
 
