@@ -4,8 +4,22 @@
   padding: 0;
 }
 
+#root,
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
 .app {
-  display: flex;
+  display: grid;
+  grid-template-areas: 
+  "menu search search search"
+  "menu news news news"
+  "menu news news news"
+  "menu news news news";
+  grid-template-columns: 15% repeat(3, 28.33%);
+  grid-template-rows: 10% repeat(3, 30%);
   background: white;
   height: 100%;
   text-align: center;

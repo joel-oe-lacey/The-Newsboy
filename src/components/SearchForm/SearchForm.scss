@@ -1,0 +1,16 @@
+.searchArea {
+  grid-area: search;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  input {
+    height: 100%;
+    width: 40%;
+  }
+
+  button {
+    height: 100%;
+    width: 20%;
+  }
+}
