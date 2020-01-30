@@ -9,7 +9,7 @@ What's New is a simple react app template that allows you to view a variety of n
 - Play around & read some news!
 
 ## Screenshots
-![Login](./screenshots/Whats New Joel.gif)
+![Login](./screenshots/Whats-New-Joel.gif)
 
 ## Tools Used to Build Project
 - [React](https://reactjs.org/)
