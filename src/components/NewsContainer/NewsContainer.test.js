@@ -2,28 +2,25 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import NewsContainer from './NewsContainer';
 import NewsArticle from '../NewsArticle/NewsArticle';
+import local from "../../data/local";
+
 
 
 describe('NewsContainer', () => {
     it('renders a container with passed articles', () => {
-        const wrapper = shallow(<NewsContainer articles={[
-            <NewsArticle
-                key={1}
-                article={{
-                    img: 'www.imgTestUrl.com',
-                    headline: 'Important Headline',
-                    description: 'Important description text',
-                    url: 'www.testRedirect.com'
-            }} />,
-            <NewsArticle
+        const wrapper = shallow(
+          <NewsContainer
+            articles={[
+              <NewsArticle key={1} 
+              article={local[1]} 
+              />,
+              <NewsArticle
                 key={2}
-                article={{
-                    img: 'www.imgTestUrl2.com',
-                    headline: 'Other Headline',
-                    description: 'Other description text',
-                    url: 'www.testRedirect2.com'
-            }} />,
-        ]} />)
+                article={local[2]}
+              />
+            ]}
+          />
+        );
 
         expect(wrapper).toMatchSnapshot();
     })
