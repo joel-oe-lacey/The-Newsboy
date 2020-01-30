@@ -4,7 +4,7 @@ import NewsArticle from '../NewsArticle/NewsArticle';
 
 const NewsContainer = ({articles}) => {
     const newsArticles = articles.map(article => {
-        return <NewsArticle key={article.id} article={article} />
+        return <NewsArticle key={article.id ? article.id : 1} article={article} />
     })
 
     return <section className="news-container">

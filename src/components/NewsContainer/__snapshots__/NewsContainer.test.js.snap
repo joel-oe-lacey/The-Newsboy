@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsContainer renders a container with passed articles 1`] = `ShallowWrapper {}`;
+
+exports[`NewsContainer renders an error if no articles are available 1`] = `ShallowWrapper {}`;
