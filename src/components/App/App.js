@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//is there a way to destructure data file imports?
 import local from '../../data/local';
 import entertainment from '../../data/entertainment';
 import health from '../../data/health';

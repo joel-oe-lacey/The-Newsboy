@@ -1,17 +1,28 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
+import science from "../../data/science";
+import local from "../../data/local";
+
 
 describe('App', () => {
-    it('renders a container with ideas', () => {
-        const wrapper = shallow(<App />)
+    let wrapper;
+    beforeEach(() => {
+        wrapper = shallow(<App />);
+    })
 
+    it('renders a container with ideas', () => {
         expect(wrapper).toMatchSnapshot();
     })
 
-    // it('renders a container with ideas', () => {
-    //     const wrapper = shallow(<App />)
+    it('should be able to select a different news type using selectNewsType', () => {
+        wrapper.instance().selectNewsType('science');
+        expect(wrapper.state('articles')).toEqual(science);
+    })  
 
-    //     expect(wrapper).toMatchSnapshot();
-    // })  
+    it("should be able to search cards by involking searchCards", () => {
+        const expected = [local[1]];
+        wrapper.instance().searchCards("dinner");
+        expect(wrapper.state("articles")).toEqual(expected);
+    });  
 })
