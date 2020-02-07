@@ -1,5 +1,5 @@
-# The Postman
-The Postman is a simple react app template that allows you to view a variety of news articles by category. As a user you can select a category, search articles by keyword or description, and click through to read the article based on the description cards.
+# The Newsboy
+The Newsboy is a simple react app template that allows you to view a variety of news articles by category. As a user you can select a category, search articles by keyword or description, and click through to read the article based on the description cards.
 
 ## Installation Guide:
 - Clone the repository to your local machine
